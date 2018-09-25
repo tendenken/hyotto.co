@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{http_host} ^hyotto.co
+RewriteRule ^(.*)$ https://www.hyotto.co/transfer/?rnd=$1 [R=301,L]
+</IfModule>
